@@ -59,61 +59,35 @@ main {
   padding-right: 1rem;
 }
 
-
 /*  Hoofdcontent -------------------------------------------------- */
-.hoofding {
-    display: flex;
-    background-color: #f5f5f5;
-    border-radius: 6px;
-    padding: 1rem;
-    max-width: max-content;
-    margin: 1rem;
+
+h1 {
+  background-color: white;
+  color: #712e37;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 1rem;
+
+  max-width: 60rem;
+  margin-left: 10rem;
+  margin-top: 7rem;
 }
 
-.hoofding img  {
-    width: 15rem;
-    height: auto;
+p {
+  background-color: white;
+  color: #712e37;
+  padding: 1rem; 
+  border-radius: 6px;
+  text-align: left;
+
+  max-width: 60rem;
+  margin-left: 10rem;
 }
 
-.titel-tekst {
-    display: flex;
+img {
+  margin-right: 10rem;
 }
 
-.titel-tekst .hoofding-uitleg h1 {
-    background-color: #f5f5f5;
-    color: #712e37;
-    border-radius: 6px;
-    padding: 1rem;
-    margin: 1rem;
-
-    font-size: 30px;
-}
-
-.titel-tekst .hoofding-uitleg .over-mij {
-    background-color: #f5f5f5;
-    color: #712e37;
-    border-radius: 6px;
-    padding: 1rem;
-    margin: 1rem; 
-}
-
-.algemene-hoofding {
-    display: flex;
-}
-
-
-
-
-/* */ 
-.extra-uitleg {
-    display: flex;
-}
-
-.uitleg, .zoekend {
-    background-color: #712e37;
-    color:  #f5f5f5;
-    border-radius: 6px;
-    margin: 0 1rem; 
-    padding: 1rem; 
-
+p a {
+  color: #712e37;
 }

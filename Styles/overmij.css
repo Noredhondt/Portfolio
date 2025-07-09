@@ -1,0 +1,161 @@
+/* ALGEMENE CSS */
+/*  Google‑font --------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/*  Basis --------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #e4d6c5;   /* beige paginaachtergrond */
+}
+
+/*  Fixed sidebar / nav ------------------------------------------ */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100vh;
+  background: #e4d6c5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  color: #712e37;
+}
+
+nav li {
+  background: #f5f5f5;
+}
+
+nav li:hover {
+  background: #712e37;
+  color: #fff;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+main {
+  text-align: center;
+  margin-left: calc(110px + 2rem); /* ruimte voor sidebar + ademruimte */
+  padding-right: 1rem;
+}
+
+
+/*  Hoofdcontent -------------------------------------------------- */
+.algemene-hoofding {
+  padding-left: 100px;
+  display: flex;
+}
+
+.hoofding {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: max-content;
+    margin: 1rem;
+}
+
+.hoofding img  {
+    width: auto;
+    height: 10rem;
+}
+
+.titel-tekst {
+    display: flex;
+}
+
+.titel-tekst .hoofding-uitleg h1 {
+    color: #d9744d;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 30px;
+}
+
+.hoofding-uitleg p.extra-uitleg {
+  background-color: #e4d6c5;
+}
+
+ .hoofding-uitleg p {
+    background-color: #f5f5f5;
+    color: #712e37;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem; 
+    max-width: 800px ;
+}
+
+.hoofding-uitleg p.zoeken {
+  background-color: #712e37;
+  color: #f5f5f5;
+
+}
+
+
+
+/*  Tijdlijn -------------------------------------------------- */
+
+.tijdlijn {
+  position: relative;
+  border-left: 6px solid white;
+  padding-left: 120px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tijdlijn-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.tijdlijn-jaar {
+  position: absolute;
+  left: -120px;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d9744d;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.tijdlijn-content h3  {
+  border: 2px solid #7c3a30;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color:#712e37
+}
+
+.tijdlijn-tekst  {
+  border: 2px solid #7c3a30;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.tijdlijn-tekst p {
+  text-align: left;
+  color:  #712e37;
+}

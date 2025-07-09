@@ -17,9 +17,13 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #e4d6c5;   /* beige paginaachtergrond */
+  
+ 
+  max-width: 60rem;
+  margin-left: 10rem;
 }
 
-/*  Fixed sidebar / nav ------------------------------------------ */
+/*  navigatie ------------------------------------------ */
 nav {
   position: fixed;
   top: 0;
@@ -64,42 +68,35 @@ main {
 }
 
 /*  Hero & intro -------------------------------------------------- */
-.titel{
-  color: #712e37;
-}
 
 .titel h1 {
   text-transform: uppercase;
-  background: #f5f5f5;
   display: inline-block;
-  width: 45rem;
-  max-width: 100%;
-  padding: 0.75rem 1.5rem;
-  margin: 1.2rem auto 0.5rem;
   border-radius: 6px;
+  padding: 1rem;
+  color: #d9744d;
+  margin-bottom: 1px;
 }
 
-.subtitle {
-  background: #f5f5f5;
-  display: block;
-  width: 45rem;
-  max-width: 100%;
-  padding: 0.5rem 1.25rem;
-  margin: 0 auto;
-  border-radius: 6px;
-}
+
 
 .about {
   background: #f5f5f5;
   color: #712e37;
   display: block;
-  width: 45rem;
-  max-width: 100%;
-  padding: 0.5rem 1.25rem;
-  margin: 1rem auto 0.5rem;
   border-radius: 6px;
+  padding:7px;
+  margin-top: 10px;
 }
 
+.about b {
+  color: #d9744d;
+}
+
+
+.about p {
+  margin: 5px;
+}
 
 /*  Skills chips -------------------------------------------------- */
 .skills {
@@ -118,7 +115,7 @@ main {
 }
 
 .skills li {
-  background: #712e37;
+  background: #712e37 ;
   color: #f5f5f5;
   font-weight: 600;
   font-size: 0.9rem;
@@ -128,62 +125,37 @@ main {
   white-space: nowrap;
 }
 
-/* ------- ERVARINGSBLOK -------- */
-.ervaring-blok {
-  background: transparent;     /* of gewoon weglaten */
-  padding: 0;                  /* padding in kinderen zelf */
 
-  /* flex‑layout */
-  display: flex;
-  gap: 1rem;                   /* strook = achtergrondkleur body */
-  align-items: flex-start;
-  max-width: 65rem;
-  margin: 2rem auto;
-}
 
-/* 2️⃣  Icoonvak = wit, alleen linkerhoeken afgerond */
-.icoon {
-  background: #f5f5f5;
-  flex: 0 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1.5rem 1rem;
-  border-radius: 12px 0 0 12px;  /* ↖︎ ↗︎ ↘︎ ↙︎ */
-}
 
-.icoon img {
-  width: 3rem;
-  height: auto;
-}
+/* Tekstvak  */
 
-/* 3️⃣  Tekstvak = wit, alleen rechterhoeken afgerond */
 .tekst {
-  background: #f5f5f5;
   flex: 1;
   padding: 1rem 1.5rem;
-  border-radius: 0 12px 12px 0;  /* ↖︎ ↗︎ ↘︎ ↙︎ */
+  border-radius:  12px;  
   color: #712e37;
-  text-align: left;              /* of center, wat je wilt */
+  text-align: left;              
+  border: #712e37 1px solid; 
+  margin-bottom: 1rem;
+
+}
+
+.tekst h2 {
+  color: #712e37;
+  margin-top: 6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+
 }
 
 .btn {
   text-decoration: none;
-  color:#712e37; 
+  color: #d9744d; 
   font-weight: bold;
 }
 
-
-/* ------- MOBIEL: stapelen ------- */
-@media (max-width: 640px) {
-  .ervaring-blok {
-    flex-direction: column;
-  }
-  .icoon,
-  .tekst {
-    border-radius: 12px;         /* weer alle hoeken rond als ze onder elkaar staan */
-  }
-}
 
 
 
