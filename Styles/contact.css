@@ -38,6 +38,7 @@ nav ul {
 
 nav li {
   background: #f5f5f5;
+  border-radius: 6px;
 }
 
 nav li:hover {
@@ -57,6 +58,12 @@ main {
   text-align: center;
   margin-left: calc(110px + 2rem); /* ruimte voor sidebar + ademruimte */
   padding-right: 1rem;
+}
+
+.active {
+  background-color: #712e37;
+  color: white;
+  border-radius: 6px;
 }
 
 /*  Hoofdcontent -------------------------------------------------- */
